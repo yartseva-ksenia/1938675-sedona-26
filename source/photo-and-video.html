@@ -6,37 +6,39 @@
     <link href="/css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
+    
     <!-- шапка сайта -->
     <header class="main-header">
-      <nav class="main-nav">
-        <a class="main-header__logo">
-          <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип города Седона">
-        </a>
-        <button class="main-nav__toggle" type="button">
+      <a class="main-header__logo logo">
+        <img class="logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип города Седона">
+      </a>
+      <nav class="main-header__nav navigation">
+        <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
+        <div class="navigation__wrapper">
           <!-- блок навигации по сайту -->
-          <ul class="main-nav__list site-navigation">
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="index.html">Главная</a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link site-navigation__link--current" href="index.html">Главная</a>
             </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link site-navigation__link--current" href="photo-and-video.html">Фото и видео</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="photo-and-video.html">Фото и видео</a>
             </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="form.html">Форма отзыва</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Форма отзыва</a>
             </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
             </li>
           </ul>
         </div>
       </nav>
-      <div class="main-header__banner">
-        <img class="main-header__banner-slogan" src="img/banner-slogan.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону! Потому что Гранд Каньон — отстой">
+      <div class="main-header__hero hero">
+        <img class="hero-slogan" src="img/banner-slogan.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону! Потому что Гранд Каньон — отстой">
       </div>
     </header>
+
     <!-- основное содержание -->
     <main class="main-container">
       <h1 class="page-title">Фото и видео</h1>
@@ -46,25 +48,33 @@
         <div class="photogallery__list">
           <!-- блок фотокарточка -->
           <article class="photogallery__item photo-card">
-            <img class="photo-card__cover" src="img/photoalbum-mobile1.jpg" width="280" height="280" alt="Дорога, уходящая вдаль на закате">
+            <a class="photo-card__link">
+              <img class="photo-card__image" src="img/photoalbum-mobile1.jpg" width="280" height="280" alt="Дорога, уходящая вдаль на закате">
+            </a>
             <h3 class="photo-card__title">Неродные просторы</h3>
             <p class="photo-card__author">Автор фото: <span class="photo-card__author-name">Борис</span></p>
             <span class="photo-card__likes">1350</span>
           </article>
           <article class="photogallery__item photo-card">
-            <img class="photo-card__cover" src="img/photoalbum-mobile2.jpg" width="280" height="280" alt="Дорога, уходящая вдаль на закате">
+            <a class="photo-card__link">
+              <img class="photo-card__image" src="img/photoalbum-mobile2.jpg" width="280" height="280" alt="Необычный кактус на фоне рыжих скал">
+            </a>
             <h3 class="photo-card__title">Местная растительность</h3>
             <p class="photo-card__author">Автор фото: <span class="photo-card__author-name">Сергей</span></p>
             <span class="photo-card__likes">143</span>
           </article>
           <article class="photogallery__item photo-card">
-            <img class="photo-card__cover" src="img/photoalbum-mobile3.jpg" width="280" height="280" alt="Дорога, уходящая вдаль на закате">
+            <a class="photo-card__link">
+              <img class="photo-card__image" src="img/photoalbum-mobile3.jpg" width="280" height="280" alt="Петляющая узкая дорога среди деревьев">
+            </a>
             <h3 class="photo-card__title">Дорога на север</h3>
             <p class="photo-card__author">Автор фото: <span class="photo-card__author-name">Петр</span></p>
             <span class="photo-card__likes">96</span>
           </article>
           <article class="photogallery__item photo-card">
-            <img class="photo-card__cover" src="img/photoalbum-mobile4.jpg" width="280" height="280" alt="Дорога, уходящая вдаль на закате">
+            <a class="photo-card__link">
+              <img class="photo-card__image" src="img/photoalbum-mobile4.jpg" width="280" height="280" alt="Тот самый Мост Дьявола в малооблачную погоду">
+            </a>
             <h3 class="photo-card__title">Мост Дьявола</h3>
             <p class="photo-card__author">Автор фото: <span class="photo-card__author-name">Антон</span></p>
             <span class="photo-card__likes">254</span>
