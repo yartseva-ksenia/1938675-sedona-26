@@ -6,29 +6,30 @@
     <link href="/css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
+
     <!-- шапка сайта -->
     <header class="main-header">
-      <nav class="main-nav">
-        <a class="main-header__logo logo">
-          <img class="logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип города Седона">
-        </a>
-        <button class="main-nav__toggle" type="button">
+      <a class="main-header__logo logo">
+        <img class="logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип города Седона">
+      </a>
+      <nav class="main-header__nav navigation">
+        <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
+        <div class="navigation__wrapper">
           <!-- блок навигации по сайту -->
-          <ul class="main-nav__list site-navigation">
-            <li class="site-navigation__item">
-              <a class="site-navigation__link site-navigation__link--current" href="">Главная</a>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link site-navigation__link--current" href="index.html">Главная</a>
             </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="photo-and-video.html">Фото и видео</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="photo-and-video.html">Фото и видео</a>
             </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="form.html">Форма отзыва</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="form.html">Форма отзыва</a>
             </li>
-            <li class="site-navigation__item">
-              <a class="site-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+            <li class="navigation__item">
+              <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
             </li>
           </ul>
         </div>
@@ -37,9 +38,11 @@
         <img class="main-header__banner-slogan" src="img/banner-slogan.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону! Потому что Гранд Каньон — отстой">
       </div>
     </header>
+
     <!-- основное содержание -->
     <main class="main-container">
       <h1 class="main-container__title title-default">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+
       <!-- Блок Преимущества -->
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -118,6 +121,8 @@
           </ul>
         </div>
       </section>
+
+      <!-- поиск гостиницы -->
       <section class="search-hotel">
         <div class="search-hotel__wrapper">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
@@ -125,6 +130,8 @@
           <p class="search-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="search-hotel__button button" href="#" target="_blank">Найти гостиницу</a>
         </div>
+
+        <!-- карта -->
       </section>
       <section class="map">
         <h2 class="visually-hidden">Седона на карте мира</h2>
@@ -133,7 +140,9 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer main-footer--vertical">
+
+    <!-- футер -->
+    <footer class="main-footer">
       <p class="main-footer__hashtag">#visitsedona</p>
       <div class="main-footer__social social">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
