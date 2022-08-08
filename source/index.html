@@ -19,16 +19,16 @@
         </button>
         <!-- блок навигации по сайту -->
         <ul class="navigation__list">
-          <li class="navigation__item">
+          <li class="navigation__item navigation__item--box-shadow">
             <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation__item navigation__item--box-shadow-mix">
             <a class="navigation__link" href="photo-and-video.html">Фото и видео</a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation__item navigation__item--box-shadow-mix">
             <a class="navigation__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation__item navigation__item--box-shadow-inset">
             <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
@@ -54,8 +54,7 @@
               <div class="advantages-card">
                 <!-- блок с описанием преимущества -->
                 <div class="advantages-card__content advantage">
-                  <h3 class="advantage__title title-default">Настоящий городок</h3>
-                  <p class="advantage__number">№1</p>
+                  <h3 class="advantage__title">Настоящий городок</h3>
                   <p class="advantage__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <img class="advantages-card__image" src="img/advantages-photo1.jpg" width="320" height="260" alt="Часть мотеля зеленого цвета, как в американских вестернах, окруженного зеленью и горами">
@@ -80,8 +79,7 @@
               <!-- блок с инфо и картинкой -->
               <div class="advantages-card">
                 <div class="advantages-card__content advantage">
-                  <h3 class="advantage__title title-default">Там есть Мост Дьявола</h3>
-                  <p class="advantage__number">№2</p>
+                  <h3 class="advantage__title">Там есть Мост Дьявола</h3>
                   <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
                 <img class="advantages-card__image" src="img/advantages-photo2.jpg" width="320" height="260" alt="Достопримечательность Седоны — Скальное образование Мост Дьявола">
@@ -89,30 +87,27 @@
             </li>
             <li class="advantages-list__item">
               <!-- блок с инфо без картинки -->
-              <div class="advantages-card advantages-card--no-image">
-                <div class="advantages-card__content advantage">
-                  <h3 class="advantage__title title-default">Небольшая площадь</h3>
-                  <p class="advantage__number">№3</p>
+              <div class="advantages-card">
+                <div class="advantages-card__content advantage advantage--no-image">
+                  <h3 class="advantage__title">Небольшая площадь</h3>
                   <p class="advantage__description">Все интересные места находятся очень близко</p>
                 </div>
               </div>
             </li>
             <li class="advantages-list__item">
               <!-- блок с инфо без картинки -->
-              <div class="advantages-card advantages-card--no-image">
-                <div class="advantages-card__content advantage">
-                  <h3 class="advantage__title title-default">Красивая дорога</h3>
-                  <p class="advantage__number">№4</p>
+              <div class="advantages-card">
+                <div class="advantages-card__content advantage advantage--no-image">
+                  <h3 class="advantage__title">Красивая дорога</h3>
                   <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </div>
               </div>
             </li>
             <li class="advantages-list__item">
               <!-- блок с инфо без картинки -->
-              <div class="advantages-card advantages-card--no-image">
-                <div class="advantages-card__content advantage">
-                  <h3 class="advantage__title title-default">Мало туристов</h3>
-                  <p class="advantage__number">№5</p>
+              <div class="advantages-card">
+                <div class="advantages-card__content advantage advantage--no-image">
+                  <h3 class="advantage__title">Мало туристов</h3>
                   <p class="advantage__description">Большинство едет в Гранд Каньон и толпится там</p>
                 </div>
               </div>
@@ -125,14 +120,14 @@
       <section class="search-hotel">
         <div class="search-hotel__wrapper">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
-          <p class="search-hotel__title">Заинтересовались?</p>
+          <p class="search-hotel__title title-default">Заинтересовались?</p>
           <p class="search-hotel__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="search-hotel__button button" href="#" target="_blank">Найти гостиницу</a>
         </div>
 
         <!-- карта -->
       </section>
-      <section class="map">
+      <section class="main-container__map map">
         <h2 class="visually-hidden">Седона на карте мира</h2>
         <div class="map-wrapper">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d298500.86974871956!2d-111.84826594698984!3d34.84935045601673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da300cd6a52d3%3A0xd0b62ffa7e756ca6!2sSedona!5e0!3m2!1sru!2sru!4v1659075685830!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -150,7 +145,7 @@
         </a>
         <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy" target="_blank">
           <span class="visually-hidden">Перейти в Телеграм</span></a>
-        <a class="social__link social__item--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
           <span class="visually-hidden">Перейти на YouTube</span></a>
       </section>
       <section class="main-footer__copyright copyright">
