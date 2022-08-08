@@ -24,6 +24,8 @@
   width: 100%;
   z-index: 1;
   background-color: @main-blue;
+  .reset-list();
+
   &::after {
     display: block;
     position: absolute;
@@ -34,21 +36,23 @@
     height: 7px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
   }
-  .reset-list();
 }
 
 .navigation__item {
   background-color: @main-blue;
   padding: 17px 0 12px;
   margin-bottom: 1px;
+
   &--box-shadow {
     box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
   }
+
   &--box-shadow-mix {
     box-shadow:
     0px 1px 0px rgba(1, 1, 1, 0.2),
     inset 0px 1px 0px rgba(255, 255, 255, 0.2);
   }
+
   &--box-shadow-inset {
     box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
   }
@@ -60,6 +64,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
   &--current {
   }
 }

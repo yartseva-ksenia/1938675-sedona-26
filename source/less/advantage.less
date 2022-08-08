@@ -2,10 +2,12 @@
   padding: 40px 18px 35px;
   background-color: @main-blue;
   color: @contrast;
+
   &--no-image {
     background-color: @background-card;
     color: @paragraf;
   }
+
   &--no-image .advantage__title {
     color: @heading;
   }
@@ -22,6 +24,7 @@
 .advantage__description {
   margin: 0;
   position: relative;
+
   &::before {
     counter-increment: advantages-number;
     content: "— № " counter(advantages-number) " —";
