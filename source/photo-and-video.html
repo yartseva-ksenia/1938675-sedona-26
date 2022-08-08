@@ -54,7 +54,12 @@
             </a>
             <h3 class="photo-card__title">Неродные просторы</h3>
             <p class="photo-card__author">Автор фото: <span class="photo-card__author-name">Борис</span></p>
-            <span class="photo-card__likes">1350</span>
+            <div class="photo-card__likes likes">
+              <button class="likes__button" type="button">
+                <span class="visually-hidden">Нравится</span>
+              </button>
+              <span class="likes__count">1350</span>
+            </div>
           </article>
           <article class="photogallery__item photo-card">
             <a class="photo-card__link">
@@ -62,7 +67,12 @@
             </a>
             <h3 class="photo-card__title">Местная растительность</h3>
             <p class="photo-card__author">Автор фото: <span class="photo-card__author-name">Сергей</span></p>
-            <span class="photo-card__likes">143</span>
+            <div class="photo-card__likes likes">
+              <button class="likes__button" type="button">
+                <span class="visually-hidden">Нравится</span>
+              </button>
+              <span class="likes__count">143</span>
+            </div>
           </article>
           <article class="photogallery__item photo-card">
             <a class="photo-card__link">
@@ -70,7 +80,12 @@
             </a>
             <h3 class="photo-card__title">Дорога на север</h3>
             <p class="photo-card__author">Автор фото: <span class="photo-card__author-name">Петр</span></p>
-            <span class="photo-card__likes">96</span>
+            <div class="photo-card__likes likes">
+              <button class="likes__button" type="button">
+                <span class="visually-hidden">Нравится</span>
+              </button>
+              <span class="likes__count">96</span>
+            </div>
           </article>
           <article class="photogallery__item photo-card">
             <a class="photo-card__link">
@@ -78,16 +93,26 @@
             </a>
             <h3 class="photo-card__title">Мост Дьявола</h3>
             <p class="photo-card__author">Автор фото: <span class="photo-card__author-name">Антон</span></p>
-            <span class="photo-card__likes">254</span>
+            <div class="photo-card__likes likes">
+              <button class="likes__button" type="button">
+                <span class="visually-hidden">Нравится</span>
+              </button>
+              <span class="likes__count">254</span>
+            </div>
           </article>
         </div>
       </section>
-      <section class="video-presentation">
-        <div class="video-presentation__wrapper">
+      <section class="presentation">
+        <div class="presentation__wrapper">
           <h2 class="visually-hidden">Видеопрезентация города Седона</h2>
-          <p class="video-presentation__title">Все еще сомневаетесь?</p>
-          <p class="video-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <img class="video-presentation__cover" src="img/video-mobile.jpg" width="280" height="177" alt="Живописные скалы, растительность и кусочек дороги города Седона">
+          <p class="presentation__title title-default">Все еще сомневаетесь?</p>
+          <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <div class="presentation__video video">
+            <img class="video__cover" src="img/video-mobile.jpg" width="280" height="177" alt="Живописные скалы, растительность и кусочек дороги города Седона">
+            <button class="video__play-button" type="button">
+              <span class="visually-hidden">Начать просмотр</span>
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -100,7 +125,7 @@
         </a>
         <a class="social__link social__link--telegram" href="tg://resolve?domain=htmlacademy" target="_blank">
           <span class="visually-hidden">Перейти в Телеграм</span></a>
-        <a class="social__link social__item--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
           <span class="visually-hidden">Перейти на YouTube</span></a>
       </section>
       <section class="main-footer__copyright copyright">
