@@ -1,0 +1,27 @@
+.video__play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 54px;
+  z-index: 1;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 27px solid transparent;
+    border-left: 48px solid rgba(255, 255, 255, 0.7);
+    z-index: 2;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}

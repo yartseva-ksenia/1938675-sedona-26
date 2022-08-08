@@ -1,0 +1,37 @@
+.advantage {
+  padding: 40px 18px 35px;
+  background-color: @main-blue;
+  color: @contrast;
+
+  &--no-image {
+    background-color: @background-card;
+    color: @paragraf;
+  }
+
+  &--no-image .advantage__title {
+    color: @heading;
+  }
+}
+
+.advantage__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-block: 0;
+  margin-bottom: 49px;
+}
+
+.advantage__description {
+  margin: 0;
+  position: relative;
+
+  &::before {
+    counter-increment: advantages-number;
+    content: "— № " counter(advantages-number) " —";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -35px;
+  }
+}
