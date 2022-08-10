@@ -2,4 +2,45 @@
   counter-reset: advantages-number;
   position: relative;
   .reset-list();
+
+  @media(min-width: @tablet-width), (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "1 1 1"
+      "2 2 2"
+      "3 4 5";
+  }
+}
+
+.advantages-list__item {
+  &--1 {
+    @media(min-width: @tablet-width), (min-width: @desktop-width) {
+      grid-area: 1;
+    }
+  }
+
+  &--2 {
+    @media(min-width: @tablet-width), (min-width: @desktop-width) {
+      grid-area: 2;
+    }
+  }
+
+  &--3 {
+    @media(min-width: @tablet-width), (min-width: @desktop-width) {
+      grid-area: 3;
+    }
+  }
+
+  &--4 {
+    @media(min-width: @tablet-width), (min-width: @desktop-width) {
+      grid-area: 4;
+    }
+  }
+
+  &--5 {
+    @media(min-width: @tablet-width), (min-width: @desktop-width) {
+      grid-area: 5;
+    }
+  }
 }
