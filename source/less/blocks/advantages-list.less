@@ -7,40 +7,40 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      "1 1 1"
-      "2 2 2"
-      "3 4 5";
+      "a a a"
+      "b b b"
+      "c d e";
   }
 }
 
 .advantages-list__item {
   &--1 {
     @media(min-width: @tablet-width), (min-width: @desktop-width) {
-      grid-area: 1;
+      grid-area: a;
     }
   }
 
   &--2 {
     @media(min-width: @tablet-width), (min-width: @desktop-width) {
-      grid-area: 2;
+      grid-area: b;
     }
   }
 
   &--3 {
     @media(min-width: @tablet-width), (min-width: @desktop-width) {
-      grid-area: 3;
+      grid-area: c;
     }
   }
 
   &--4 {
     @media(min-width: @tablet-width), (min-width: @desktop-width) {
-      grid-area: 4;
+      grid-area: d;
     }
   }
 
   &--5 {
     @media(min-width: @tablet-width), (min-width: @desktop-width) {
-      grid-area: 5;
+      grid-area: e;
     }
   }
 }
