@@ -18,7 +18,7 @@
 }
 
 .navigation__list {
-  display: none;
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -54,6 +54,17 @@
 
 .navigation__item {
   margin-bottom: 1px;
+
+  @media (max-width: @mobile-width) {
+    &:hover {
+      background-color: @main-blue--hover;
+    }
+
+    &:active {
+      background-color: @main-blue--down;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 
   &--box-shadow {
     box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
@@ -110,7 +121,19 @@
   line-height: 26px;
   padding: 17px 0 12px 0;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
     padding: 18px 0 17px 0;
+
+    &:hover {
+      color: @main-blue;
+    }
+
+    &:active {
+      color: @main-menu--down;
+    }
+
+    &--current {
+      color: @main-menu--current;
+    }
   }
 }
