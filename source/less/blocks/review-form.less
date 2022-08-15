@@ -1,12 +1,16 @@
 .review-form {
-  padding: 20px;
   display: flex;
   flex-direction: column;
+  .content-width();
+}
+
+.review-form__description {
+  .margin-reset(28px);
 }
 
 .review-form__group {
   border: none;
-  padding: 0;
+  padding: 24px 0 39px;
 }
 
 .review-form__title {
@@ -26,7 +30,7 @@
 }
 
 .review-form__input {
-  background-color: @input-field;
+  background-color: @input;
   box-sizing: border-box;
   border: none;
   padding: 16px;
@@ -51,7 +55,7 @@
   height: 150px;
   padding: 16px;
   margin-bottom: 56px;
-  background-color: @input-field;
+  background-color: @input;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;

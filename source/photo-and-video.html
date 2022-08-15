@@ -17,23 +17,21 @@
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="navigation__wrapper">
-          <!-- блок навигации по сайту -->
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link site-navigation__link--current" href="index.html">Главная</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="photo-and-video.html">Фото и видео</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="form.html">Форма отзыва</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
-            </li>
-          </ul>
-        </div>
+        <!-- блок навигации по сайту -->
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current" href="photo-and-video.html">Фото и видео</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+          </li>
+        </ul>
       </nav>
       <div class="main-header__hero hero">
         <img class="hero-slogan" src="img/banner-slogan.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону! Потому что Гранд Каньон — отстой">
@@ -46,60 +44,79 @@
       <section class="photogallery">
         <h2 class="visually-hidden">Фотографии Седоны</h2>
         <p class="photogallery__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        <div class="photogallery__list">
+        <div class="photogallery__list photo-list">
+
           <!-- блок фотокарточка -->
-          <article class="photogallery__item photo-card">
-            <a class="photo-card__link">
+          <article class="photo-list__item photo-card photo-card--full-width">
+            <a class="photo-card__link" href="#" onclick="return false;">
               <img class="photo-card__image" src="img/photoalbum-mobile1.jpg" width="280" height="280" alt="Дорога, уходящая вдаль на закате">
             </a>
-            <h3 class="photo-card__title">Неродные просторы</h3>
-            <p class="photo-card__author">Автор фото: <span class="photo-card__author-name">Борис</span></p>
-            <div class="photo-card__likes likes">
-              <button class="likes__button" type="button">
-                <span class="visually-hidden">Нравится</span>
-              </button>
-              <span class="likes__count">1350</span>
+            <div class="photo-card__content">
+              <div class="photo-card__wrapper">
+                <h3 class="photo-card__title">Неродные просторы</h3>
+                <p class="photo-card__author">Автор фото: <span class="photo-card__author-name">Борис</span></p>
+              </div>
+              <div class="photo-card__likes likes">
+                <a class="likes__button">
+                  <span class="visually-hidden">Нравится</span>
+                </a>
+                <span class="likes__count">1350</span>
+              </div>
             </div>
           </article>
-          <article class="photogallery__item photo-card">
-            <a class="photo-card__link">
+
+          <article class="photo-list__item photo-card">
+            <a class="photo-card__link" href="#" onclick="return false;">
               <img class="photo-card__image" src="img/photoalbum-mobile2.jpg" width="280" height="280" alt="Необычный кактус на фоне рыжих скал">
             </a>
-            <h3 class="photo-card__title">Местная растительность</h3>
-            <p class="photo-card__author">Автор фото: <span class="photo-card__author-name">Сергей</span></p>
-            <div class="photo-card__likes likes">
-              <button class="likes__button" type="button">
-                <span class="visually-hidden">Нравится</span>
-              </button>
-              <span class="likes__count">143</span>
+            <div class="photo-card__content">
+              <div class="photo-card__wrapper">
+                <h3 class="photo-card__title">Местная растительность</h3>
+                <p class="photo-card__author">Автор фото: <span class="photo-card__author-name">Сергей</span></p>
+              </div>
+              <div class="photo-card__likes likes">
+                <a class="likes__button" type="button">
+                  <span class="visually-hidden">Нравится</span>
+                </a>
+                <span class="likes__count">143</span>
+              </div>
             </div>
           </article>
-          <article class="photogallery__item photo-card">
-            <a class="photo-card__link">
+          <article class="photo-list__item photo-card">
+            <a class="photo-card__link" href="#" onclick="return false;">
               <img class="photo-card__image" src="img/photoalbum-mobile3.jpg" width="280" height="280" alt="Петляющая узкая дорога среди деревьев">
             </a>
-            <h3 class="photo-card__title">Дорога на север</h3>
-            <p class="photo-card__author">Автор фото: <span class="photo-card__author-name">Петр</span></p>
-            <div class="photo-card__likes likes">
-              <button class="likes__button" type="button">
-                <span class="visually-hidden">Нравится</span>
-              </button>
-              <span class="likes__count">96</span>
+            <div class="photo-card__content">
+              <div class="photo-card__wrapper">
+                <h3 class="photo-card__title">Дорога на север</h3>
+                <p class="photo-card__author">Автор фото: <span class="photo-card__author-name">Петр</span></p>
+              </div>
+              <div class="photo-card__likes likes">
+                <a class="likes__button" type="button">
+                  <span class="visually-hidden">Нравится</span>
+                </a>
+                <span class="likes__count">96</span>
+              </div>
             </div>
           </article>
-          <article class="photogallery__item photo-card">
-            <a class="photo-card__link">
+          <article class="photo-list__item photo-card">
+            <a class="photo-card__link" href="#" onclick="return false;">
               <img class="photo-card__image" src="img/photoalbum-mobile4.jpg" width="280" height="280" alt="Тот самый Мост Дьявола в малооблачную погоду">
             </a>
-            <h3 class="photo-card__title">Мост Дьявола</h3>
-            <p class="photo-card__author">Автор фото: <span class="photo-card__author-name">Антон</span></p>
-            <div class="photo-card__likes likes">
-              <button class="likes__button" type="button">
-                <span class="visually-hidden">Нравится</span>
-              </button>
-              <span class="likes__count">254</span>
+              <div class="photo-card__content">
+              <div class="photo-card__wrapper">
+                <h3 class="photo-card__title">Мост Дьявола</h3>
+                <p class="photo-card__author">Автор фото: <span class="photo-card__author-name">Антон</span></p>
+              </div>
+              <div class="photo-card__likes likes">
+                <a class="likes__button" type="button">
+                  <span class="visually-hidden">Нравится</span>
+                </a>
+                <span class="likes__count">254</span>
+              </div>
             </div>
           </article>
+
         </div>
       </section>
       <section class="presentation">
