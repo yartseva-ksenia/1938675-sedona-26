@@ -3,15 +3,6 @@
   background-color: @main-blue;
   color: @white;
 
-  &--no-image {
-    background-color: @background-card;
-    color: @paragraf;
-  }
-
-  &--no-image .advantage__title {
-    color: @black;
-  }
-
   @media (min-width: @tablet-width) {
     width: 256px;
   }
@@ -19,6 +10,13 @@
   @media (min-width: @desktop-width) {
     width: 400px;
   }
+
+  &--no-image {
+    background-color: @background-card;
+    color: @black;
+    width: 100%;
+  }
+
 }
 
 .advantage__title {
@@ -27,6 +25,7 @@
   line-height: 26px;
   margin-block: 0;
   margin-bottom: 49px;
+  color: inherit;
 }
 
 .advantage__description {
