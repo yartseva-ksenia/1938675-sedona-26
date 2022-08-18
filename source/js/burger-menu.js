@@ -3,5 +3,5 @@ let menu = document.querySelector('.navigation__list');
 
 burger.onclick = function () {
   burger.classList.toggle('navigation__toggle--cross');
- menu.classList.toggle('navigation__list--open');
+  menu.classList.toggle('navigation__list--open');
 };
