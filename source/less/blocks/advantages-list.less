@@ -4,12 +4,29 @@
   .reset-list();
 
   @media (min-width: @tablet-width) {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       "a a a"
       "b b b"
       "c d e";
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 384px solid transparent;
+    border-right: 384px solid transparent;
+    border-top: 37px solid @white;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 }
 

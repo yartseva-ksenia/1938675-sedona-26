@@ -4,6 +4,22 @@
   background-image: url("../img/banner-cover.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-top: 37px solid transparent;
+    border-right: 384px solid @white;
+    border-left: 384px solid @white;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .hero__slogan {
