@@ -10,7 +10,7 @@
 
     <!-- шапка сайта -->
     <header class="main-header">
-      <a class="main-header__logo logo">
+      <a class="main-header__logo logo" href="index.html">
         <img class="logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип города Седона">
       </a>
       <nav class="main-header__nav navigation">
@@ -39,36 +39,38 @@
     </header>
 
     <!-- основное содержание -->
-    <main class="form-container">
+    <main class="content-width">
       <h1 class="form-container__title title-default">Оставьте свой отзыв</h1>
       <form class="review-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="review-form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        <fieldset class="review-form__group">
-          <legend class="review-form__title title-default">Представьтесь:</legend>
-          <label class="review-form__field">
-            <span class="review-form__label">Имя*:</span>
-            <input class="review-form__input" type="text" value="Пётр">
-          </label>
-          <label class="review-form__field">
-            <span class="review-form__label">Фамилия*:</span>
-            <input class="review-form__input" type="text" value="Пустота">
-          </label>
-          <label class="review-form__field">
-            <span class="review-form__label">Отчество:</span>
-            <input class="review-form__input" type="text" value="Викторович">
-          </label>
-        </fieldset>
-        <fieldset class="review-form__group">
-          <legend class="review-form__title title-default">Контактная информация:</legend>
-          <label class="review-form__field">
-            <span class="review-form__label">Контактный телефон*:</span>
-            <input class="review-form__input" type="tel" placeholder="Введите телефон">
-          </label>
-          <label class="review-form__field">
-            <span class="review-form__label">Электронная почта*:</span>
-            <input class="review-form__input" type="email" placeholder="Введите e-mail">
-          </label>
-        </fieldset>
+        <div class="review-form__wrapper">
+          <fieldset class="review-form__group">
+            <legend class="review-form__title title-default">Представьтесь:</legend>
+            <label class="review-form__field">
+              <span class="review-form__label">Имя*:</span>
+              <input class="review-form__input" type="text" value="Пётр">
+            </label>
+            <label class="review-form__field">
+              <span class="review-form__label">Фамилия*:</span>
+              <input class="review-form__input" type="text" value="Пустота">
+            </label>
+            <label class="review-form__field">
+              <span class="review-form__label">Отчество:</span>
+              <input class="review-form__input" type="text" value="Викторович">
+            </label>
+          </fieldset>
+          <fieldset class="review-form__group">
+            <legend class="review-form__title title-default">Контактная информация:</legend>
+            <label class="review-form__field">
+              <span class="review-form__label">Контактный телефон*:</span>
+              <input class="review-form__input" type="tel" placeholder="Введите телефон">
+            </label>
+            <label class="review-form__field">
+              <span class="review-form__label">Электронная почта*:</span>
+              <input class="review-form__input" type="email" placeholder="Введите e-mail">
+            </label>
+          </fieldset>
+        </div>
         <fieldset class="review-form__group">
           <legend class="review-form__title title-default">Ваше общее впечатление:</legend>
           <ul class="review-form__control-list">
@@ -133,7 +135,7 @@
         </div>
       </form>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer content-width">
       <p class="main-footer__hashtag">#visitsedona</p>
       <section class="main-footer__social social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
@@ -172,5 +174,6 @@
         </div>
       </div>
     </div>
+    <script src="./js/burger-menu.js"></script>
   </body>
 </html>

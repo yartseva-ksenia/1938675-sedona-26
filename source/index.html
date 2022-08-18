@@ -40,13 +40,13 @@
 
     <!-- основное содержание -->
     <main class="main-container">
-      <h1 class="main-container__title title-default">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <h1 class="main-container__title title-default content-width">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
 
       <!-- Блок Преимущества -->
       <section class="advantages">
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Преимущества Седоны перед Гранд Каньоном</h2>
-          <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <p class="advantages__intro content-width">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           <!-- блок со списком преимуществ -->
           <ul class="advantages__list advantages-list">
             <li class="advantages-list__item advantages-list__item--1">
@@ -87,7 +87,7 @@
             </li>
             <li class="advantages-list__item advantages-list__item--3">
               <!-- блок с инфо без картинки -->
-              <div class="advantages-card">
+              <div class="advantages-card advantages-card--no-image">
                 <div class="advantages-card__content advantage advantage--no-image">
                   <h3 class="advantage__title">Небольшая площадь</h3>
                   <p class="advantage__description">Все интересные места находятся очень близко</p>
@@ -96,7 +96,7 @@
             </li>
             <li class="advantages-list__item advantages-list__item--4">
               <!-- блок с инфо без картинки -->
-              <div class="advantages-card">
+              <div class="advantages-card advantages-card--no-image">
                 <div class="advantages-card__content advantage advantage--no-image">
                   <h3 class="advantage__title">Красивая дорога</h3>
                   <p class="advantage__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -105,7 +105,7 @@
             </li>
             <li class="advantages-list__item advantages-list__item--5">
               <!-- блок с инфо без картинки -->
-              <div class="advantages-card">
+              <div class="advantages-card advantages-card--no-image">
                 <div class="advantages-card__content advantage advantage--no-image">
                   <h3 class="advantage__title">Мало туристов</h3>
                   <p class="advantage__description">Большинство едет в Гранд Каньон и толпится там</p>
@@ -127,16 +127,15 @@
 
         <!-- карта -->
       </section>
+
       <section class="main-container__map map">
         <h2 class="visually-hidden">Седона на карте мира</h2>
-        <div class="map-wrapper">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d298500.86974871956!2d-111.84826594698984!3d34.84935045601673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da300cd6a52d3%3A0xd0b62ffa7e756ca6!2sSedona!5e0!3m2!1sru!2sru!4v1659075685830!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d298500.86974871956!2d-111.84826594698984!3d34.84935045601673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da300cd6a52d3%3A0xd0b62ffa7e756ca6!2sSedona!5e0!3m2!1sru!2sru!4v1659075685830!5m2!1sru!2sru" allowfullscreen=""></iframe>
       </section>
     </main>
 
     <!-- футер -->
-    <footer class="main-footer">
+    <footer class="main-footer content-width">
       <p class="main-footer__hashtag">#visitsedona</p>
       <section class="main-footer__social social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
@@ -155,5 +154,6 @@
         </a>
       </section>
     </footer>
+    <script src="./js/burger-menu.js"></script>
   </body>
 </html>

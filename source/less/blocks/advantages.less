@@ -1,4 +1,9 @@
 .advantages__intro {
   .margin-reset(32px);
-  .content-width();
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

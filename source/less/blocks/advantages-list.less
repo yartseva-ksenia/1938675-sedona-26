@@ -3,7 +3,8 @@
   position: relative;
   .reset-list();
 
-  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
@@ -11,35 +12,51 @@
       "b b b"
       "c d e";
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 384px solid transparent;
+    border-right: 384px solid transparent;
+    border-top: 37px solid @white;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .advantages-list__item {
   &--1 {
-    @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    @media (min-width: @tablet-width) {
       grid-area: a;
     }
   }
 
   &--2 {
-    @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    @media (min-width: @tablet-width) {
       grid-area: b;
     }
   }
 
   &--3 {
-    @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    @media (min-width: @tablet-width) {
       grid-area: c;
     }
   }
 
   &--4 {
-    @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    @media (min-width: @tablet-width) {
       grid-area: d;
     }
   }
 
   &--5 {
-    @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    @media (min-width: @tablet-width) {
       grid-area: e;
     }
   }

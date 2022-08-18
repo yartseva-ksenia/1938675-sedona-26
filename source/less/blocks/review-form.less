@@ -1,11 +1,17 @@
 .review-form {
   display: flex;
   flex-direction: column;
-  .content-width();
 }
 
 .review-form__description {
   .margin-reset(28px);
+}
+
+.review-form__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .review-form__group {
@@ -44,6 +50,16 @@
   margin-block: 0;
   padding: 0;
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .review-form__control-item {
@@ -63,6 +79,19 @@
   resize: none;
   box-sizing: border-box;
   border: none;
+}
+
+.review-form__submit {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.review-form__button {
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
 }
 
 .review-form__remark {

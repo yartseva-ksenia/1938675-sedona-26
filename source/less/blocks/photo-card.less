@@ -3,7 +3,7 @@
   position: relative;
 
   &--full-width {
-    @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    @media (min-width: @tablet-width) {
       grid-column: 1/3;
     }
   }
@@ -18,13 +18,10 @@
 .photo-card__content {
   padding: 15px 0 25px;
 
-  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     padding: 22px 20px 15px;
     display: flex;
     justify-content: space-between;
-  }
-
-  @media (min-width: @tablet-width) {
     background-color: @input;
   }
 
