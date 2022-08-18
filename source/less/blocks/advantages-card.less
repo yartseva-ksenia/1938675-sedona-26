@@ -1,15 +1,25 @@
 .advantages-card {
-  @media (min-width: @tablet-width) {
-    display: flex;
-  }
+  background-color: @main-blue;
+  color: @white;
 
-  @media (min-width: @desktop-width) {
-    display: flex;
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 
   &--revers {
     @media (min-width: @tablet-width) {
-      flex-direction: row-reverse;
+      // как-то надо поменять местами ячейки
+    }
+  }
+
+  &--no-image {
+    background-color: @background-card;
+    color: @black;
+    height: 100%;
+
+    @media (min-width: @tablet-width) {
+      display: block;
     }
   }
 }
