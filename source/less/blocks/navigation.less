@@ -15,10 +15,15 @@
   @media (min-width: @tablet-width) {
     display: none;
   }
+
+  &--cross {
+    background-image: url("../img/icon-menu-close.svg");
+    z-index: 2;
+  }
 }
 
 .navigation__list {
-  display: block;
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -49,6 +54,11 @@
     justify-content: center;
     background-color: @white;
     color: @black;
+  }
+
+  &--open {
+    display: block;
+    z-index: 1;
   }
 }
 
