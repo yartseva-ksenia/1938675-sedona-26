@@ -7,6 +7,10 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: @tablet-width) {
+    z-index: 2;
+  }
 }
 
 .main-header__nav {
@@ -14,6 +18,8 @@
 }
 
 .main-header__hero {
+  display: flex;
+  justify-content: center;
   padding: 90px 19px 85px;
   background-color: @main-blue;
   background-image: url("../img/banner-cover.jpg");

@@ -1,11 +1,19 @@
 .recommendation-list {
-  padding: 23px 18px 52px;
   list-style-type: none;
   margin-block: 0;
+  text-align: left;
+  .content-width();
+  padding-top: 23px;
+  padding-bottom: 52px;
+
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
 }
 
 .recommendation-list__item {
-  text-align: left;
   padding-left: 47px;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -27,11 +35,24 @@
   &--souvenir {
     background-image: url("../img/icon-gift.svg");
   }
+
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-top: 75px;
+    background-position: center 0;
+    background-size: 76px 75px;
+    margin-bottom: 0;
+  }
 }
 
 .recommendation-list__title {
   padding-top: 7px;
-  margin-bottom: 16px;
+  .margin-reset(16px);
+
+  @media (min-width: @tablet-width), (min-width: @desktop-width) {
+    padding-top: 26px;
+    .margin-reset(23px);
+  }
 }
 
 .recommendation-list__description {
