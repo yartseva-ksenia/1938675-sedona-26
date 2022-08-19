@@ -6,19 +6,27 @@
   background-position: center top;
   position: relative;
 
+  &::before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    transform: scaleX(-1);
+    bottom: 0;
+    background-image: url("../img/hero-decor.svg");
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 57px;
+  }
+
   &::after {
     content: "";
     position: absolute;
+    left: 50%;
     bottom: 0;
-    width: 0;
-    height: 0;
-    border-top: 37px solid transparent;
-    border-right: 384px solid @white;
-    border-left: 384px solid @white;
-
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
+    background-image: url("../img/hero-decor.svg");
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 57px;
   }
 }
 
