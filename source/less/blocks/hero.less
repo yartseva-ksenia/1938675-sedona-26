@@ -3,8 +3,12 @@
   background-color: @main-blue;
   background-image: url("../img/banner-cover.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center bottom;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    min-height: 517px;
+  }
 
   &::before {
     content: "";
@@ -31,5 +35,13 @@
 }
 
 .hero__slogan {
-  margin-top: 146px;
+  width: 282px;
+  height: 214px;
+  margin-top: 90px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 78px;
+    width: 460px;
+    height: 350px;
+  }
 }
