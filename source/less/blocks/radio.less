@@ -1,0 +1,46 @@
+.radio {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: -46px;
+    content: "";
+    width: 46px;
+    height: 46px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    opacity: 1;
+  }
+
+  &:hover::before {
+      background-color: #E5E5E5;
+    }
+
+  &:active::before {
+      background-color: #D5D5D5;
+    }
+
+  &::after {
+    position: absolute;
+    left: -31px;
+    top: 15px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: @paragraf;
+  }
+
+  &:active::after {
+    background-color: @control-down;
+    border-color: @input--down;
+  }
+}
+
+.control__input + .radio::after {
+  content: none;
+}
+
+.control__input:checked + .radio::after {
+  content: "";
+}
