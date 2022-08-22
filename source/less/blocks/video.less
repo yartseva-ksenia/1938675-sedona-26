@@ -1,3 +1,7 @@
+.video {
+  position: relative;
+}
+
 .video__play-button {
   position: absolute;
   left: 50%;
@@ -9,6 +13,7 @@
   border: 0;
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
 
   &::after {
     display: block;
@@ -24,4 +29,22 @@
   &--hidden {
     display: none;
   }
+}
+
+.video__container {
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
+}
+
+.video__poster {
+  width: 100%;
 }
