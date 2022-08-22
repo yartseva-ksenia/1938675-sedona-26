@@ -34,7 +34,7 @@
         </ul>
       </nav>
       <div class="main-header__hero hero hero--short">
-        <img class="hero__slogan hero__slogan--short" src="img/hero.svg" width="229" height="39" alt="Добро пожаловать в великолепную Седону! Потому что Гранд Каньон — отстой">
+        <img class="hero__slogan hero__slogan--short" src="img/hero-slogan.svg" width="229" height="39" alt="Добро пожаловать в великолепную Седону! Потому что Гранд Каньон — отстой">
       </div>
     </header>
 
@@ -49,7 +49,11 @@
           <!-- блок фотокарточка -->
           <article class="photo-list__item photo-card photo-card--full-width">
             <a class="photo-card__link" href="#" onclick="return false;">
-              <img class="photo-card__image" src="img/photoalbum-mobile1.jpg" width="280" height="280" alt="Дорога, уходящая вдаль на закате">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg">
+                <img class="photo-card__image" src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="Дорога, уходящая вдаль на закате">
+              </picture>
             </a>
             <div class="photo-card__content">
               <div class="photo-card__wrapper">
@@ -70,7 +74,11 @@
 
           <article class="photo-list__item photo-card">
             <a class="photo-card__link" href="#" onclick="return false;">
-              <img class="photo-card__image" src="img/photoalbum-mobile2.jpg" width="280" height="280" alt="Необычный кактус на фоне рыжих скал">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg">
+                <img class="photo-card__image" src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Необычный кактус на фоне рыжих скал">
+              </picture>
             </a>
             <div class="photo-card__content">
               <div class="photo-card__wrapper">
@@ -90,7 +98,11 @@
           </article>
           <article class="photo-list__item photo-card">
             <a class="photo-card__link" href="#" onclick="return false;">
-              <img class="photo-card__image" src="img/photoalbum-mobile3.jpg" width="280" height="280" alt="Петляющая узкая дорога среди деревьев">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg">
+                <img class="photo-card__image" src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Петляющая узкая дорога среди деревьев">
+              </picture>
             </a>
             <div class="photo-card__content">
               <div class="photo-card__wrapper">
@@ -110,7 +122,11 @@
           </article>
           <article class="photo-list__item photo-card">
             <a class="photo-card__link" href="#" onclick="return false;">
-              <img class="photo-card__image" src="img/photoalbum-mobile4.jpg" width="280" height="280" alt="Тот самый Мост Дьявола в малооблачную погоду">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg">
+                <img class="photo-card__image" src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="Тот самый Мост Дьявола в малооблачную погоду">
+              </picture>
             </a>
               <div class="photo-card__content">
               <div class="photo-card__wrapper">
