@@ -45,7 +45,9 @@
         <p class="review-form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <div class="review-form__wrapper">
           <fieldset class="review-form__group">
-            <legend class="review-form__title title-default">Представьтесь:</legend>
+            <div class="review-form__title">
+              <legend class="title-default">Представьтесь:</legend>
+            </div>
             <label class="review-form__field">
               <span class="review-form__label">Имя*:</span>
               <input class="review-form__input" type="text" value="Пётр">
@@ -60,7 +62,9 @@
             </label>
           </fieldset>
           <fieldset class="review-form__group">
-            <legend class="review-form__title title-default">Контактная информация:</legend>
+            <div class="review-form__title">
+              <legend class="title-default">Контактная информация:</legend>
+            </div>
             <label class="review-form__field">
               <span class="review-form__label">Контактный телефон*:</span>
               <input class="review-form__input review-form__input--tel" type="tel" placeholder="Введите телефон">
@@ -71,8 +75,10 @@
             </label>
           </fieldset>
         </div>
-        <fieldset class="review-form__group">
-          <legend class="review-form__title title-default">Ваше общее впечатление:</legend>
+        <fieldset class="review-form__group review-form__group--padding-bottom">
+          <div class="review-form__title">
+            <legend class="title-default">Ваше общее впечатление:</legend>
+          </div>
           <ul class="review-form__control-list">
             <li class="review-form__control-item">
               <input class="control__input" type="radio" name="impressions" id="impressions1" checked>
@@ -94,8 +100,10 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="review-form__group">
-          <legend class="review-form__title title-default">Посещенные достопримечательности:</legend>
+        <fieldset class="review-form__group review-form__group--padding-bottom">
+          <div class="review-form__title">
+            <legend class="review-form__title title-default">Посещенные достопримечательности:</legend>
+          </div>
           <ul class="review-form__control-list">
             <li class="review-form__control-item">
               <input class="control__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
@@ -124,7 +132,9 @@
           </ul>
         </fieldset>
         <div class="review-form__group">
-          <label class="review-form__title title-default" for="comment">Опишите свои эмоции:</label>
+          <div class="review-form__title">
+            <label class="review-form__title title-default" for="comment">Опишите свои эмоции:</label>
+          </div>
           <textarea class="review-form__comment" name="comment" placeholder="Опишите подробно все свои восторги" id="comment"></textarea>
         </div>
         <div class="review-form__submit">
