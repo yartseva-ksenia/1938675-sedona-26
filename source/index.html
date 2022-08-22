@@ -57,7 +57,11 @@
                   <h3 class="advantage__title">Настоящий городок</h3>
                   <p class="advantage__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
-                <img class="advantages-card__image" src="img/advantages-photo1.jpg" width="320" height="260" alt="Часть мотеля зеленого цвета, как в американских вестернах, окруженного зеленью и горами">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-city@1x-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/photo-city@1x-tablet.svg">
+                  <img class="advantages-card__image" src="img/photo-city@1x-mobile.jpg" width="320" height="260" alt="Часть мотеля зеленого цвета, как в американских вестернах, окруженного зеленью и горами">
+                </picture>
               </div>
               <!-- блок с рекомендациями -->
               <ul class="advantages-list__recommendation recommendation-list">
