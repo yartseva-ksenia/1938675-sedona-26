@@ -1,6 +1,7 @@
 .navigation {
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
 .navigation__toggle {
@@ -76,7 +77,10 @@
 
   &--open {
     display: block;
-    z-index: 1;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
   }
 }
 
