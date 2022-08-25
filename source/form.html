@@ -5,6 +5,10 @@
     <meta name="viewport" content="with-device-width, initial-scale=1.0">
     <title>HTML Academy: Седона — форма отзыва</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
 
@@ -18,7 +22,7 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <!-- блок навигации по сайту -->
-        <ul class="navigation__list">
+        <ul class="navigation__list navigation__list--open">
           <li class="navigation__item navigation__item--box-shadow">
             <a class="navigation__link" href="index.html">Главная</a>
           </li>
@@ -50,11 +54,11 @@
             </div>
             <label class="review-form__field">
               <span class="review-form__label">Имя*:</span>
-              <input class="review-form__input" type="text" value="Пётр">
+              <input class="review-form__input" type="text" value="Пётр" required>
             </label>
             <label class="review-form__field">
               <span class="review-form__label">Фамилия*:</span>
-              <input class="review-form__input" type="text" value="Пустота">
+              <input class="review-form__input" type="text" value="Пустота" required>
             </label>
             <label class="review-form__field">
               <span class="review-form__label">Отчество:</span>
@@ -67,11 +71,11 @@
             </div>
             <label class="review-form__field">
               <span class="review-form__label">Контактный телефон*:</span>
-              <input class="review-form__input review-form__input--tel" type="tel" placeholder="Введите телефон">
+              <input class="review-form__input review-form__input--tel" type="tel" placeholder="Введите телефон" required>
             </label>
             <label class="review-form__field">
               <span class="review-form__label">Электронная почта*:</span>
-              <input class="review-form__input review-form__input--email" type="email" placeholder="Введите e-mail">
+              <input class="review-form__input review-form__input--email" type="email" placeholder="Введите e-mail" required>
             </label>
           </fieldset>
         </div>
