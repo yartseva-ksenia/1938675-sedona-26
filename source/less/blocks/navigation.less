@@ -75,6 +75,15 @@
     color: @black;
   }
 
+  &--nojs {
+    position: static;
+    display: block;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
+  }
+
   &--open {
     display: block;
 
