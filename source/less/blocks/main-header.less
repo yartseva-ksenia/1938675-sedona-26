@@ -4,12 +4,17 @@
 
 .main-header__logo {
   position: absolute;
-  top: 0;
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
 
   @media (min-width: @tablet-width) {
     z-index: 2;
+    top: 0;
+  }
+
+  &--withjs {
+    top: 0;
   }
 }
 

@@ -5,6 +5,7 @@
 }
 
 .navigation__toggle {
+  display: none;
   width: 56px;
   height: 56px;
   border: none;
@@ -20,6 +21,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &--withjs {
+    display: block;
   }
 
   @media (min-width: @tablet-width) {
