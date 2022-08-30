@@ -8,8 +8,12 @@
   }
 
   &--revers {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  &--revers .advantages-card__content {
     @media (min-width: @tablet-width) {
-      // как-то надо поменять местами ячейки
+      order: 1;
     }
   }
 
