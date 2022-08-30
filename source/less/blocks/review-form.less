@@ -25,8 +25,35 @@
   padding-inline: 0;
   padding-block-end: 0;
 
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 56px;
+  }
+
   &--padding-bottom {
     padding-bottom: 24px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 26px;
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 56px;
+    }
+  }
+
+  &:last-child {
+    @media (min-width: @desktop-width) {
+      margin-bottom: 48px;
+    }
   }
 }
 
@@ -47,7 +74,11 @@
 
 .review-form__group:first-child {
   @media(min-width: @tablet-width) {
-  margin-right: 89px;
+    margin-right: 89px;
+  }
+
+  @media(min-width: @desktop-width) {
+    margin-right: 129px;
   }
 }
 
@@ -62,6 +93,10 @@
     left: auto;
     background-color: @input--hover;
   }
+
+  @media (min-width: @tablet-width) {
+    right: -64px;
+  }
 }
 
 .review-form__title {
@@ -69,6 +104,10 @@
   margin-left: auto;
   margin-right: auto;
   padding-inline: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 28px;
+  }
 
   &--fix-width {
     @media (min-width: @tablet-width) {
@@ -130,9 +169,14 @@
   box-sizing: border-box;
   border: none;
   padding: 16px;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  &::placeholder {
+    color: @main-menu--down;
+  }
 
   &--tel,
   &--email {
@@ -194,16 +238,13 @@
   margin-bottom: 16px;
   line-height: 46px;
   padding-left: 20px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .review-form__comment {
   width: 100%;
   height: 150px;
   padding: 16px;
+  margin-bottom: 16px;
   background-color: @input;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
@@ -212,6 +253,10 @@
   resize: none;
   box-sizing: border-box;
   border: none;
+
+  &::placeholder {
+    color: @main-menu--down;
+  }
 }
 
 .review-form__submit {
@@ -221,6 +266,8 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
   }
 }
 
