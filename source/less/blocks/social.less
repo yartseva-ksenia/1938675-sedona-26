@@ -6,6 +6,7 @@
 
 .social__link {
   display: block;
+  position: relative;
   width: 48px;
   height: 48px;
   background-color: @main-blue;
@@ -26,16 +27,15 @@
   &:last-child {
     margin-right: 0;
   }
+}
 
-  &--vkontakte {
-    background-image: url("../img/vk.svg");
-  }
+.social__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 
-  &--telegram {
-    background-image: url("../img/telegram.svg");
-  }
-
-  &--youtube {
-    background-image: url("../img/youtube.svg");
-  }
+.social__link:active .social__icon {
+  opacity: 0.3;
 }
