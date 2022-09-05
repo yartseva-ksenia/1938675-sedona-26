@@ -1,0 +1,46 @@
+.checkbox {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: -46px;
+    content: "";
+    width: 46px;
+    height: 46px;
+    background-color: @input;
+    border-radius: 4px;
+    opacity: 1;
+  }
+
+  &:hover::before {
+    background-color: @input--hover;
+  }
+
+  &:active::before {
+    background-color: @input--down;
+  }
+
+  &::after {
+    position: absolute;
+    left: -46px;
+    content: "";
+    width: 46px;
+    height: 46px;
+    background-image: url("../img/check.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 16px;
+    background-position: center;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.control__input + .checkbox::after {
+  content: none;
+}
+
+.control__input:checked + .checkbox::after {
+  content: "";
+}

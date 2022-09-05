@@ -5,6 +5,10 @@
     <meta name="viewport" content="with-device-width, initial-scale=1.0">
     <title>HTML Academy: Седона — фото и видео</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
 
@@ -18,29 +22,29 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <!-- блок навигации по сайту -->
-        <ul class="navigation__list">
-          <li class="navigation__item">
+        <ul class="navigation__list navigation__list--nojs">
+          <li class="navigation__item navigation__item--box-shadow">
             <a class="navigation__link" href="index.html">Главная</a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation__item navigation__item--box-shadow-mix">
             <a class="navigation__link navigation__link--current" href="photo-and-video.html">Фото и видео</a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation__item navigation__item--box-shadow-mix">
             <a class="navigation__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="navigation__item">
+          <li class="navigation__item navigation__item--box-shadow-inset">
             <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
-      <div class="main-header__hero hero">
-        <img class="hero-slogan" src="img/banner-slogan.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону! Потому что Гранд Каньон — отстой">
+      <div class="main-header__hero hero hero--short">
+        <img class="hero__slogan hero__slogan--short" src="img/hero-slogan.svg" width="229" height="39" alt="Добро пожаловать в великолепную Седону! Потому что Гранд Каньон — отстой">
       </div>
     </header>
 
     <!-- основное содержание -->
     <main class="main-container content-width">
-      <h1 class="page-title title-default">Фото и видео</h1>
+      <h1 class="main-container__title page-title page-title--photo-and-video">Фото и видео</h1>
       <section class="photogallery">
         <h2 class="visually-hidden">Фотографии Седоны</h2>
         <p class="photogallery__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
@@ -49,7 +53,11 @@
           <!-- блок фотокарточка -->
           <article class="photo-list__item photo-card photo-card--full-width">
             <a class="photo-card__link" href="#" onclick="return false;">
-              <img class="photo-card__image" src="img/photoalbum-mobile1.jpg" width="280" height="280" alt="Дорога, уходящая вдаль на закате">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg">
+                <img class="photo-card__image" src="img/photo-1-mobile@1x.jpg" width="280" height="280" alt="Дорога, уходящая вдаль на закате">
+              </picture>
             </a>
             <div class="photo-card__content">
               <div class="photo-card__wrapper">
@@ -58,6 +66,9 @@
               </div>
               <div class="photo-card__likes likes">
                 <a class="likes__button">
+                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                    <path class="likes__icon" opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                  </svg>
                   <span class="visually-hidden">Нравится</span>
                 </a>
                 <span class="likes__count">1350</span>
@@ -67,7 +78,11 @@
 
           <article class="photo-list__item photo-card">
             <a class="photo-card__link" href="#" onclick="return false;">
-              <img class="photo-card__image" src="img/photoalbum-mobile2.jpg" width="280" height="280" alt="Необычный кактус на фоне рыжих скал">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg">
+                <img class="photo-card__image" src="img/photo-2-mobile@1x.jpg" width="280" height="280" alt="Необычный кактус на фоне рыжих скал">
+              </picture>
             </a>
             <div class="photo-card__content">
               <div class="photo-card__wrapper">
@@ -76,6 +91,9 @@
               </div>
               <div class="photo-card__likes likes">
                 <a class="likes__button" type="button">
+                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                    <path class="likes__icon" opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                  </svg>
                   <span class="visually-hidden">Нравится</span>
                 </a>
                 <span class="likes__count">143</span>
@@ -84,7 +102,11 @@
           </article>
           <article class="photo-list__item photo-card">
             <a class="photo-card__link" href="#" onclick="return false;">
-              <img class="photo-card__image" src="img/photoalbum-mobile3.jpg" width="280" height="280" alt="Петляющая узкая дорога среди деревьев">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg">
+                <img class="photo-card__image" src="img/photo-3-mobile@1x.jpg" width="280" height="280" alt="Петляющая узкая дорога среди деревьев">
+              </picture>
             </a>
             <div class="photo-card__content">
               <div class="photo-card__wrapper">
@@ -93,6 +115,9 @@
               </div>
               <div class="photo-card__likes likes">
                 <a class="likes__button" type="button">
+                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                    <path class="likes__icon" opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                  </svg>
                   <span class="visually-hidden">Нравится</span>
                 </a>
                 <span class="likes__count">96</span>
@@ -101,7 +126,11 @@
           </article>
           <article class="photo-list__item photo-card">
             <a class="photo-card__link" href="#" onclick="return false;">
-              <img class="photo-card__image" src="img/photoalbum-mobile4.jpg" width="280" height="280" alt="Тот самый Мост Дьявола в малооблачную погоду">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg">
+                <img class="photo-card__image" src="img/photo-4-mobile@1x.jpg" width="280" height="280" alt="Тот самый Мост Дьявола в малооблачную погоду">
+              </picture>
             </a>
               <div class="photo-card__content">
               <div class="photo-card__wrapper">
@@ -110,6 +139,9 @@
               </div>
               <div class="photo-card__likes likes">
                 <a class="likes__button" type="button">
+                  <svg width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                    <path class="likes__icon" opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+                  </svg>
                   <span class="visually-hidden">Нравится</span>
                 </a>
                 <span class="likes__count">254</span>
@@ -120,17 +152,21 @@
         </div>
       </section>
       <section class="presentation">
-        <div class="presentation__wrapper">
           <h2 class="visually-hidden">Видеопрезентация города Седона</h2>
           <p class="presentation__title title-default">Все еще сомневаетесь?</p>
           <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          <div class="presentation__video video">
-            <img class="video__cover" src="img/video-mobile.jpg" width="280" height="177" alt="Живописные скалы, растительность и кусочек дороги города Седона">
+          <div class="presentation__wrapper video">
             <button class="video__play-button" type="button">
               <span class="visually-hidden">Начать просмотр</span>
             </button>
+            <div class="video__container">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/video-poster-desktop@1x.jpg">
+                <source media="(min-width: 768px)" srcset="img/video-poster-tablet@1x.jpg">
+                <img class="video__poster" src="img/video-poster-mobile@1x.jpg" width="280" height="177" alt="Живописные скалы, растительность и кусочек дороги города Седона">
+              </picture>
+            </div>
           </div>
-        </div>
       </section>
     </main>
     <footer class="main-footer content-width">

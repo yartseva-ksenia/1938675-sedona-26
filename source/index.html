@@ -5,20 +5,21 @@
     <meta name="viewport" content="with-device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
 
     <!-- шапка сайта -->
     <header class="main-header">
-      <a class="main-header__logo logo">
-        <img src="img/logo.svg" width="185" height="96" alt="Логотип города Седона">
-      </a>
       <nav class="main-header__nav navigation">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <!-- блок навигации по сайту -->
-        <ul class="navigation__list">
+        <ul class="navigation__list navigation__list--nojs">
           <li class="navigation__item navigation__item--box-shadow">
             <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
           </li>
@@ -32,15 +33,18 @@
             <a class="navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
+        <a class="main-header__logo logo">
+          <img src="img/logo.svg" width="185" height="96" alt="Логотип города Седона">
+        </a>
       </nav>
       <div class="main-header__hero hero">
-        <img class="hero__slogan" src="img/banner-slogan.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону! Потому что Гранд Каньон — отстой">
+        <img class="hero__slogan" src="img/hero-slogan-full.svg" width="282" height="214" alt="Добро пожаловать в великолепную Седону! Потому что Гранд Каньон — отстой">
       </div>
     </header>
 
     <!-- основное содержание -->
     <main class="main-container">
-      <h1 class="main-container__title title-default content-width">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <h1 class="main-container__title page-title content-width">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
 
       <!-- Блок Преимущества -->
       <section class="advantages">
@@ -57,7 +61,11 @@
                   <h3 class="advantage__title">Настоящий городок</h3>
                   <p class="advantage__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
-                <img class="advantages-card__image" src="img/advantages-photo1.jpg" width="320" height="260" alt="Часть мотеля зеленого цвета, как в американских вестернах, окруженного зеленью и горами">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg">
+                  <img class="advantages-card__image" src="img/photo-city-mobile@1x.jpg" width="320" height="260" alt="Часть мотеля зеленого цвета, как в американских вестернах, окруженного зеленью и горами">
+                </picture>
               </div>
               <!-- блок с рекомендациями -->
               <ul class="advantages-list__recommendation recommendation-list">
@@ -82,10 +90,14 @@
                   <h3 class="advantage__title">Там есть Мост Дьявола</h3>
                   <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
-                <img class="advantages-card__image" src="img/advantages-photo2.jpg" width="320" height="260" alt="Достопримечательность Седоны — Скальное образование Мост Дьявола">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+                  <img class="advantages-card__image" src="img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Достопримечательность Седоны — Скальное образование Мост Дьявола">
+                </picture>
               </div>
             </li>
-            <li class="advantages-list__item advantages-list__item--3">
+            <li class="advantages-list__item advantages-list__item--3 underline">
               <!-- блок с инфо без картинки -->
               <div class="advantages-card advantages-card--no-image">
                 <div class="advantages-card__content advantage advantage--no-image">
@@ -94,7 +106,7 @@
                 </div>
               </div>
             </li>
-            <li class="advantages-list__item advantages-list__item--4">
+            <li class="advantages-list__item advantages-list__item--4 underline">
               <!-- блок с инфо без картинки -->
               <div class="advantages-card advantages-card--no-image">
                 <div class="advantages-card__content advantage advantage--no-image">

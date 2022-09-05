@@ -9,4 +9,18 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @main-blue--hover;
+  }
+
+  &:active {
+    background-color: @main-blue--down;
+    color: @white--opacity30;
+  }
+
+  &:disabled {
+    background-color: @button--disabled;
+  }
 }

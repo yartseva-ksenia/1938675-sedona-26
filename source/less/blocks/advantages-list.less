@@ -15,14 +15,14 @@
 
   &::before {
     content: "";
+    width: 320px;
+    height: 37px;
     position: absolute;
+    left: 0;
     top: -16px;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 384px solid transparent;
-    border-right: 384px solid transparent;
-    border-top: 37px solid @white;
+    background-image: url("../img/white-triangle.svg");
+    background-size: 320px 37px;
+    background-repeat: no-repeat;
 
     @media (min-width: @tablet-width) {
       display: none;
