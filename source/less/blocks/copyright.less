@@ -1,15 +1,33 @@
-.copyright-title {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  width: 117px;
+.copyright {
+  width: 143px;
+  max-width: 160px;
 }
 
 .copyright__link {
   display: block;
-  width: 27px;
-  height: 34px;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  text-decoration: none;
+  color: @black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &:hover {
+    color: @main-blue;
+  }
+}
+
+.copyright-title {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-right: 13px;
+}
+
+.copyright__icon {
+  width: 28px;
+  height: 33px;
+}
+
+.copyright__link:hover .copyright__icon {
+  fill: @main-blue;
 }
