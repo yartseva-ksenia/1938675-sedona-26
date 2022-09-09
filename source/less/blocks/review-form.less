@@ -51,12 +51,6 @@
       margin-bottom: 56px;
     }
   }
-
-  // &:last-child {
-  //   @media (min-width: @desktop-width) {
-  //     margin-bottom: 48px;
-  //   }
-  // }
 }
 
 .review-form__group::before {
@@ -193,6 +187,17 @@
   &--email {
     background-image: url("../img/mail.svg");
   }
+
+  &:hover {
+    background-color: @input--hover;
+  }
+
+  &:active,
+  &:focus {
+    outline: 4px solid @input--hover;
+    outline-offset: -4px;
+    background-color: @white;
+  }
 }
 
 .review-form__control-list {
@@ -258,6 +263,17 @@
 
   &::placeholder {
     color: @main-menu--down;
+  }
+
+  &:hover {
+    background-color: @input--hover;
+  }
+
+  &:active,
+  &:focus {
+    outline: 4px solid @input--hover;
+    outline-offset: -4px;
+    background-color: @white;
   }
 }
 

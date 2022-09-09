@@ -23,6 +23,11 @@
     opacity: 0.3;
   }
 
+  &:focus {
+    outline: 2px solid @main-blue--hover;
+    outline-offset: -2px;
+  }
+
   &--withjs {
     display: block;
   }
@@ -162,6 +167,12 @@
   line-height: 26px;
   padding: 17px 0 12px 0;
 
+  &:focus {
+    background-color: @main-blue--down;
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+
   @media (min-width: @tablet-width) {
     padding: 18px 0 17px 0;
     font-size: 14px;
@@ -173,6 +184,13 @@
 
     &:active {
       color: @main-menu--down;
+    }
+
+    &:focus {
+      background-color: @white;
+      color: inherit;
+      outline: 2px solid @main-blue--hover;
+      outline-offset: -2px;
     }
 
     &--current {

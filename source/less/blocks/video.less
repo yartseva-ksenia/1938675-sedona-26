@@ -13,6 +13,11 @@
   padding: 0;
   cursor: pointer;
 
+  &:focus {
+    outline: 2px solid @main-blue--hover;
+    outline-offset: -2px;
+  }
+
   &::after {
     display: block;
     content: "";
