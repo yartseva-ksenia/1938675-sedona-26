@@ -15,9 +15,11 @@
     background-color: @main-blue--hover;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     background-color: @main-blue--down;
     color: @white--opacity30;
+    outline: none;
   }
 
   &:disabled {

@@ -4,6 +4,11 @@
   padding-left: 16px;
 }
 
+.control__input:focus + .checkbox::before,
+.control__input:focus + .radio::before {
+  background-color: @input--down;
+}
+
 .control__label {
   font-weight: 700;
   text-transform: none;
