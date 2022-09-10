@@ -5,16 +5,22 @@
 }
 
 .review-form__description {
-  .margin-reset(102px);
+  .margin-reset(28px);
   max-width: 435px;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 102px;
+  }
 }
 
 .review-form__wrapper {
+  width: 100%;
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+
   }
 }
 
@@ -61,7 +67,7 @@
   width: 320px;
   height: 1px;
   background-color: @input--hover;
-  z-index: -1;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     content: none;
@@ -90,7 +96,7 @@
     background-color: @input--hover;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     right: -64px;
   }
 }
@@ -123,7 +129,7 @@
     top: 50%;
     height: 1px;
     background-color: @input--hover;
-    z-index: -1;
+    z-index: 1;
     min-width: 123px;
   }
 
@@ -140,7 +146,7 @@
     top: 50%;
     height: 1px;
     background-color: @input--hover;
-    z-index: -1;
+    z-index: 1;
     min-width: 123px;
   }
 
