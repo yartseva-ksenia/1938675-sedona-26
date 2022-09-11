@@ -10,6 +10,10 @@
     text-align: center;
     padding: 57px 0 59px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 80px;
+  }
 }
 
 .recommendation-list__item {
@@ -17,7 +21,7 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 40px 40px;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 
   &:last-child {
     margin-bottom: 0;
@@ -61,4 +65,12 @@
 
 .recommendation-list__description {
   margin: 0;
+}
+
+.recommendation-list__description br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
 }
