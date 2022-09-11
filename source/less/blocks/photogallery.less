@@ -1,3 +1,21 @@
-.photogallery__item {
-  padding: 24px 20px 25px;
+.photogallery {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.photogallery__intro {
+  margin-block: 0;
+  margin-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 445px;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 90px;
+  }
 }
