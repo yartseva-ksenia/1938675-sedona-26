@@ -247,6 +247,7 @@
   text-align: left;
   font-size: 18px;
   line-height: 46px;
+  padding-inline: 0;
 }
 
 .review-form__control-list--radio {
@@ -337,7 +338,6 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 60px;
   }
@@ -363,6 +363,10 @@
   color: rgba(51, 51, 51, 0.6);
   text-align: right;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    max-width: 300px;
+  }
 
   @media (min-width: @desktop-width) {
     font-size: 14px;
