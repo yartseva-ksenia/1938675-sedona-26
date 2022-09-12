@@ -279,7 +279,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 171px 171px 152px 1fr;
+    grid-template-columns: repeat(4, max-content);
     column-gap: 64px;
     width: 871px;
     padding-top: 31px;
@@ -288,8 +288,14 @@
 }
 
 .review-form__control-item {
+  display: flex;
+  align-items: flex-start;
   margin-bottom: 16px;
   padding-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 230px;
+  }
 }
 
 .review-form__comment {
