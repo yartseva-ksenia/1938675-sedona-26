@@ -150,13 +150,10 @@
   }
 }
 
-.navigation__item:nth-child(2) {
+.navigation__item:nth-child(2),
+.navigation__item:nth-child(6) {
   @media (min-width: @tablet-width) {
-    margin-right: 153px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: 240px;
+    grid-column: 2/4;
   }
 }
 
