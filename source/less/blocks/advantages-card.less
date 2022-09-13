@@ -21,11 +21,31 @@
     background-color: @background-card;
     color: @black;
     height: 100%;
+    position: relative;
 
     @media (min-width: @tablet-width) {
       display: block;
     }
   }
+}
+
+.advantages-card--no-image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 36px);
+  height: 1px;
+  background-color: @underline;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.advantages-list__item:last-child .advantages-card--no-image::after {
+  display: none;
 }
 
 .advantages-card__image {

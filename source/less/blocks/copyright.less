@@ -1,6 +1,10 @@
 .copyright {
   width: 143px;
-  max-width: 160px;
+  max-width: 200px;
+
+  @media (min-width: @desktop-width) {
+    max-width: 400px;
+  }
 }
 
 .copyright__link {
@@ -33,12 +37,9 @@
 .copyright__icon {
   width: 28px;
   height: 33px;
-}
+  margin-right: 6px;
 
-.copyright__link:hover .copyright__icon {
-  fill: @main-blue;
-}
-
-.copyright__link:active .copyright__icon {
-  fill: @html-academy--down;
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+  }
 }

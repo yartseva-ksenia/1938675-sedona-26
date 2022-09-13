@@ -1,6 +1,11 @@
 .photo-card {
   text-align: left;
   position: relative;
+  padding: 24px 20px 32px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 
   &--full-width {
     @media (min-width: @tablet-width) {
@@ -11,12 +16,29 @@
       grid-column: 1/4;
     }
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: @input--hover;
+    left: 0;
+    top: 0;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .photo-card__link {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: @background-photo;
+  text-decoration: none;
+  color: inherit;
 
   &:focus {
     outline: 2px solid @main-blue--hover;
@@ -29,13 +51,14 @@
 }
 
 .photo-card__content {
-  padding: 15px 0 25px;
+  padding-top: 15px;
 
   @media (min-width: @tablet-width) {
     padding: 22px 20px 15px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
     background-color: @input;
   }
 
@@ -50,19 +73,31 @@
   }
 }
 
+.photo-card__wrapper {
+  max-width: 500px;
+}
+
 .photo-card__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   margin: 0;
   color: inherit;
+  margin-block: 0;
 }
 
 .photo-card__author {
   text-transform: none;
+  margin-block: 0;
+  margin-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .photo-card__likes {
   display: flex;
   align-items: flex-end;
+  max-width: 100px;
 }

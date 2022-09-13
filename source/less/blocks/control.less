@@ -1,7 +1,11 @@
-.control {
+.control__label {
   position: relative;
   display: inline-block;
   padding-left: 16px;
+}
+
+.control__input {
+  opacity: 0;
 }
 
 .control__input:focus + .checkbox::before,
@@ -9,7 +13,7 @@
   background-color: @input--down;
 }
 
-.control__label {
+.control__name {
   font-weight: 700;
   text-transform: none;
 }

@@ -2,6 +2,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 280px;
+
+  @media (min-width: @desktop-width) {
+    max-width: 400px;
+  }
 }
 
 .social__link {
@@ -11,6 +16,7 @@
   height: 48px;
   background-color: @main-blue;
   margin-right: 6px;
+  margin-bottom: 6px;
   background-repeat: no-repeat;
   background-size: 24px 24px;
   background-position: center;
@@ -26,7 +32,8 @@
     outline: none;
   }
 
-  &:last-child {
+  &:last-child,
+  &:nth-child(6n+6) {
     margin-right: 0;
   }
 }
