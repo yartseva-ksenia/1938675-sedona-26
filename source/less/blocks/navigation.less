@@ -2,6 +2,14 @@
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+
+  &--nojs {
+    margin-bottom: 55px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .navigation__toggle {
@@ -78,7 +86,8 @@
     display: block;
 
     @media (min-width: @tablet-width) {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
     }
   }
 
