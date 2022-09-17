@@ -11,6 +11,7 @@ import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import del from 'del';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-html-minifier';
 
 // Styles
 
@@ -31,6 +32,7 @@ csso()
 
 const html = () => {
 return gulp.src('source/*.html')
+.pipe(htmlmin({collapseWhitespace: true}))
 .pipe(gulp.dest('build'));
 }
 
@@ -38,6 +40,7 @@ return gulp.src('source/*.html')
 
 const scripts = () => {
 return gulp.src('source/js/burger-menu.js')
+.pipe(terser())
 .pipe(gulp.dest('build/js'))
 .pipe(browser.stream());
 }
@@ -58,7 +61,7 @@ return gulp.src('source/img/**/*.{png,jpg}')
 // WebP
 
 const createWebp = () => {
-return gulp.src('source/img/**/*.{png,jpg}')
+return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/favicons/*.png'])
 .pipe(squoosh({
 webp: {}
 }))
@@ -68,7 +71,7 @@ webp: {}
 // SVG
 
 const svg = () =>
-gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
